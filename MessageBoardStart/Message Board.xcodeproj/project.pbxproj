@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041A2DE6243DDD8200A2AFDF /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041A2DE5243DDD8200A2AFDF /* MessageKit.framework */; };
+		041A2DE7243DDD8200A2AFDF /* MessageKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 041A2DE5243DDD8200A2AFDF /* MessageKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		041A2DEA243DDD8D00A2AFDF /* InputBarAccessoryView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041A2DE9243DDD8D00A2AFDF /* InputBarAccessoryView.framework */; };
+		041A2DEB243DDD8D00A2AFDF /* InputBarAccessoryView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 041A2DE9243DDD8D00A2AFDF /* InputBarAccessoryView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		041A2DED243DF3ED00A2AFDF /* MessageThreadDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A2DEC243DF3ED00A2AFDF /* MessageThreadDetailViewController.swift */; };
 		4612B5C8211AB41100E7FF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612B5C7211AB41100E7FF73 /* AppDelegate.swift */; };
 		4612B5CD211AB41200E7FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4612B5CB211AB41200E7FF73 /* Main.storyboard */; };
 		4612B5CF211AB41300E7FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4612B5CE211AB41300E7FF73 /* Assets.xcassets */; };
@@ -15,11 +20,27 @@
 		4612B5DC211AB6C500E7FF73 /* MessageThreadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4612B5DB211AB6C500E7FF73 /* MessageThreadController.swift */; };
 		4643602A211AB90900E7FF73 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46436029211AB90900E7FF73 /* HTTPMethod.swift */; };
 		46436030211ABC3700E7FF73 /* MessageThreadsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4643602F211ABC3700E7FF73 /* MessageThreadsTableViewController.swift */; };
-		46436033211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46436032211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift */; };
-		46436035211ABC6B00E7FF73 /* MessageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46436034211ABC6B00E7FF73 /* MessageDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		041A2DE8243DDD8200A2AFDF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				041A2DE7243DDD8200A2AFDF /* MessageKit.framework in Embed Frameworks */,
+				041A2DEB243DDD8D00A2AFDF /* InputBarAccessoryView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		041A2DE5243DDD8200A2AFDF /* MessageKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageKit.framework; path = Carthage/Build/iOS/MessageKit.framework; sourceTree = "<group>"; };
+		041A2DE9243DDD8D00A2AFDF /* InputBarAccessoryView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputBarAccessoryView.framework; path = Carthage/Build/iOS/InputBarAccessoryView.framework; sourceTree = "<group>"; };
+		041A2DEC243DF3ED00A2AFDF /* MessageThreadDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadDetailViewController.swift; sourceTree = "<group>"; };
 		04C08A78243DD7E000248698 /* MessageKitAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MessageKitAssets.bundle; path = Carthage/Build/iOS/MessageKit.framework/MessageKitAssets.bundle; sourceTree = "<group>"; };
 		04C08A7C243DD8E700248698 /* InputBarAccessoryView.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = InputBarAccessoryView.framework.dSYM; path = Carthage/Build/iOS/InputBarAccessoryView.framework.dSYM; sourceTree = "<group>"; };
 		04C08A7D243DD91400248698 /* MessageKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = MessageKit.framework.dSYM; path = Carthage/Build/iOS/MessageKit.framework.dSYM; sourceTree = "<group>"; };
@@ -33,8 +54,6 @@
 		4612B5DB211AB6C500E7FF73 /* MessageThreadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadController.swift; sourceTree = "<group>"; };
 		46436029211AB90900E7FF73 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		4643602F211ABC3700E7FF73 /* MessageThreadsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadsTableViewController.swift; sourceTree = "<group>"; };
-		46436032211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageThreadDetailTableViewController.swift; sourceTree = "<group>"; };
-		46436034211ABC6B00E7FF73 /* MessageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041A2DE6243DDD8200A2AFDF /* MessageKit.framework in Frameworks */,
+				041A2DEA243DDD8D00A2AFDF /* InputBarAccessoryView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +72,8 @@
 		04C08A77243DD7E000248698 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				041A2DE9243DDD8D00A2AFDF /* InputBarAccessoryView.framework */,
+				041A2DE5243DDD8200A2AFDF /* MessageKit.framework */,
 				04C08A7D243DD91400248698 /* MessageKit.framework.dSYM */,
 				04C08A7C243DD8E700248698 /* InputBarAccessoryView.framework.dSYM */,
 				04C08A78243DD7E000248698 /* MessageKitAssets.bundle */,
@@ -127,8 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				4643602F211ABC3700E7FF73 /* MessageThreadsTableViewController.swift */,
-				46436032211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift */,
-				46436034211ABC6B00E7FF73 /* MessageDetailViewController.swift */,
+				041A2DEC243DF3ED00A2AFDF /* MessageThreadDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -144,6 +166,7 @@
 				4612B5C1211AB41100E7FF73 /* Frameworks */,
 				4612B5C2211AB41100E7FF73 /* Resources */,
 				04C08A7B243DD7EA00248698 /* ShellScript */,
+				041A2DE8243DDD8200A2AFDF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,14 +231,16 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/MessageKit.framework",
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/MessageKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/InputBarAccessoryView.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/InputBarAccessoryView.framework",
+				"$(DERIVED_FILE_DIR)/Carthage/Build/iOS/MessageKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -229,11 +254,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4612B5DC211AB6C500E7FF73 /* MessageThreadController.swift in Sources */,
+				041A2DED243DF3ED00A2AFDF /* MessageThreadDetailViewController.swift in Sources */,
 				4612B5DA211AB66600E7FF73 /* MessageThread.swift in Sources */,
 				4643602A211AB90900E7FF73 /* HTTPMethod.swift in Sources */,
 				46436030211ABC3700E7FF73 /* MessageThreadsTableViewController.swift in Sources */,
-				46436035211ABC6B00E7FF73 /* MessageDetailViewController.swift in Sources */,
-				46436033211ABC5800E7FF73 /* MessageThreadDetailTableViewController.swift in Sources */,
 				4612B5C8211AB41100E7FF73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +404,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Message Board/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -398,6 +426,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Message Board/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
