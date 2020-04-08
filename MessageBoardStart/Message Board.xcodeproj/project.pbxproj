@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C08A78243DD7E000248698 /* MessageKitAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MessageKitAssets.bundle; path = Carthage/Build/iOS/MessageKit.framework/MessageKitAssets.bundle; sourceTree = "<group>"; };
+		04C08A7C243DD8E700248698 /* InputBarAccessoryView.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = InputBarAccessoryView.framework.dSYM; path = Carthage/Build/iOS/InputBarAccessoryView.framework.dSYM; sourceTree = "<group>"; };
+		04C08A7D243DD91400248698 /* MessageKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = MessageKit.framework.dSYM; path = Carthage/Build/iOS/MessageKit.framework.dSYM; sourceTree = "<group>"; };
 		4612B5C4211AB41100E7FF73 /* Message Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Message Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4612B5C7211AB41100E7FF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4612B5CC211AB41200E7FF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,11 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C08A77243DD7E000248698 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C08A7D243DD91400248698 /* MessageKit.framework.dSYM */,
+				04C08A7C243DD8E700248698 /* InputBarAccessoryView.framework.dSYM */,
+				04C08A78243DD7E000248698 /* MessageKitAssets.bundle */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4612B5BB211AB41100E7FF73 = {
 			isa = PBXGroup;
 			children = (
 				4612B5C6211AB41100E7FF73 /* Message Board */,
 				4612B5C5211AB41100E7FF73 /* Products */,
+				04C08A77243DD7E000248698 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +143,7 @@
 				4612B5C0211AB41100E7FF73 /* Sources */,
 				4612B5C1211AB41100E7FF73 /* Frameworks */,
 				4612B5C2211AB41100E7FF73 /* Resources */,
+				04C08A7B243DD7EA00248698 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -151,7 +166,7 @@
 				TargetAttributes = {
 					4612B5C3211AB41100E7FF73 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -185,6 +200,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04C08A7B243DD7EA00248698 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/MessageKit.framework",
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/MessageKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4612B5C0211AB41100E7FF73 /* Sources */ = {
@@ -350,7 +387,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LambdaSchool.Message-Board";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -368,7 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LambdaSchool.Message-Board";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
